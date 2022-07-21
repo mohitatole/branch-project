@@ -1,1 +1,7 @@
-this in dev project
+#!/bin/bash
+service httpd start
+chkconfig httpd on
+sleep 5
+echo "this is index.html" >> /var/www/html/index.html
+chmod 777 /var/www/html/index.html
+
